@@ -1,6 +1,6 @@
 # Example: Wrap OPCENTER in a Claude Code plugin
 
-[OPCENTER](https://github.com/Franck1120/opcenter) is a Python **tactical analyzer for milsim / softair operation orders**. It's built for the **Mercenari SOCS** team (CSEN Campania circuit): you feed it the OPORD "book" — the official PDF for an op — and it produces a structured tactical sheet for every objective.
+**OPCENTER** is a Python **tactical analyzer for milsim / softair operation orders** (a local Hephios Lab project, not yet published as a public repo). It's built for the **Mercenari SOCS** team (CSEN Campania circuit): you feed it the OPORD "book" — the official PDF for an op — and it produces a structured tactical sheet for every objective.
 
 Its pipeline runs in phases (the repo is at Phase 1 MVP, with later phases in roadmap):
 

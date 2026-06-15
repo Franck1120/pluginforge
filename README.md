@@ -146,7 +146,7 @@ pluginforge/
 ## Author
 
 **Hephios Lab** — [Francesco "Kekko" Rocco](mailto:kekkorocco.fr@gmail.com)
-Cloud / System Engineer. Builder of [PhysicsCopilot](https://github.com/Franck1120/physicscopilot), [OPCENTER](https://github.com/Franck1120/opcenter), [Sapori](https://github.com/Franck1120/sapori).
+Cloud / System Engineer. Builder of [PhysicsCopilot](https://github.com/Franck1120/physicscopilot), OPCENTER, and Sapori.
 
 If PluginForge saves you an afternoon, ping me on X (`@kekko`) or open an issue with what you built.
 
