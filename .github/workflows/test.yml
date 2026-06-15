@@ -1,0 +1,38 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Lint JSON + check template structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate manifests, templates, and skills
+        run: python scripts/validate.py
+
+      - name: Lint all JSON files
+        run: |
+          set -e
+          fail=0
+          while IFS= read -r -d '' f; do
+            # Templates contain {{PLACEHOLDERS}} and are checked by validate.py
+            case "$f" in
+              *"/templates/"*) continue ;;
+            esac
+            if ! python -c "import json,sys; json.load(open(sys.argv[1]))" "$f"; then
+              echo "::error file=$f::invalid JSON"
+              fail=1
+            fi
+          done < <(find . -name '*.json' -not -path './.git/*' -print0)
+          exit $fail

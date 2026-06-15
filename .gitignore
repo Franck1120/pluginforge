@@ -1,0 +1,39 @@
+# PluginForge — .gitignore
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Claude Code local state
+.claude/settings.local.json
+.claude/local/
+.claude/failure-log.txt
+.claude-cache/
+
+# Python (for MCP server template)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.env.local
+*.egg-info/
+
+# Node (in case template adds a node runner)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts of generated plugins (don't commit user output)
+out/
+dist/
+build/
+
+# Logs
+*.log
