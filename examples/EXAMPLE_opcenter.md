@@ -1,6 +1,6 @@
 # Example: Wrap OPCENTER in a Claude Code plugin
 
-**OPCENTER** is a Python **tactical analyzer for milsim / softair operation orders** (a local Hephios Lab project, not yet published as a public repo). It's built for the **Mercenari SOCS** team (CSEN Campania circuit): you feed it the OPORD "book" — the official PDF for an op — and it produces a structured tactical sheet for every objective.
+**OPCENTER** is a Python **tactical analyzer for milsim / softair operation orders** (a local project, not yet published as a public repo). It's built for an airsoft/milsim team: you feed it the OPORD "book" — the official PDF for an op — and it produces a structured tactical sheet for every objective.
 
 Its pipeline runs in phases (the repo is at Phase 1 MVP, with later phases in roadmap):
 
@@ -79,7 +79,7 @@ Generated `plugin.json`:
   "name": "opcenter-brief",
   "version": "0.1.0",
   "description": "Parses milsim/softair OPORD PDFs with OPCENTER and produces a structured tactical sheet plus a markdown briefing.",
-  "author": { "name": "Francesco Rocco", "email": "kekkorocco.fr@gmail.com" },
+  "author": { "name": "Your Name", "url": "https://github.com/your-handle" },
   "license": "MIT",
   "keywords": ["milsim", "softair", "opord", "tactical", "briefing"]
 }
@@ -127,7 +127,7 @@ Subcommands map to OPCENTER's CLI: `parse` (Phase 1 sheet + data.json),
 Set the frontmatter `description` to milsim language so the skill fires on natural requests, not just the slash command:
 
 ```
-description: Analyze a milsim/softair OPORD book with OPCENTER. Use this skill when the user mentions "OP book", "OPORD", "scheda tattica", "briefing milsim", "softair operation order", a Mercenari SOCS / CSEN op, or invokes /opcenter-brief. Parses the PDF, then helps reason about WARNINGs, material budget, and patrol crossing risk.
+description: Analyze a milsim/softair OPORD book with OPCENTER. Use this skill when the user mentions "OP book", "OPORD", "scheda tattica", "briefing milsim", "softair operation order", an airsoft/milsim op, or invokes /opcenter-brief. Parses the PDF, then helps reason about WARNINGs, material budget, and patrol crossing risk.
 ```
 
 Replace the body's trigger examples and workflow with concrete ones:
@@ -182,7 +182,7 @@ MATERIAL BUDGET: C4 TIGHT (need 2, declared 2), smoke OK.
 Natural language triggers the skill too:
 
 ```
-> Analizza il book softair in ~/ops/csen_aprile.pdf e dimmi i WARNING
+> Analizza il book softair in ~/ops/op_april.pdf e dimmi i WARNING
 ```
 
 ---

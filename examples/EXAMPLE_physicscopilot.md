@@ -78,7 +78,7 @@ The generated `.claude-plugin/plugin.json`:
   "name": "physicscopilot-assist",
   "version": "0.1.0",
   "description": "Discover PhysicsCopilot repair domains and open guided-repair sessions from Claude Code, via the PhysicsCopilot REST API.",
-  "author": { "name": "Francesco Rocco", "email": "kekkorocco.fr@gmail.com" },
+  "author": { "name": "Your Name", "url": "https://github.com/your-handle" },
   "license": "MIT",
   "keywords": ["repair", "maintenance", "gemini", "vision", "mcp"],
   "mcpServers": "./.mcp.json"
