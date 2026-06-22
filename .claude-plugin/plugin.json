@@ -4,8 +4,7 @@
   "version": "0.1.0",
   "description": "The plugin that builds plugins. Scaffold a publishable Claude Code plugin from a one-line idea in under 60 seconds.",
   "author": {
-    "name": "Francesco \"Kekko\" Rocco",
-    "email": "kekkorocco.fr@gmail.com",
+    "name": "Franck1120",
     "url": "https://github.com/Franck1120"
   },
   "homepage": "https://github.com/Franck1120/pluginforge",

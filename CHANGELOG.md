@@ -28,7 +28,7 @@ Initial public release.
   Claude Code CLIs (≤ 2.1.131) reject it as an unrecognized key and fail
   `claude plugin validate`. Documented the version constraint in
   `docs/PLUGIN_ANATOMY.md`.
-- Replaced placeholder GitHub username `kekko` with the real `Franck1120`
+- Replaced the placeholder GitHub username with `Franck1120`
   across the manifest, README, quickstart, templates, and examples.
 - Rewrote both worked examples to match the real upstream projects (the prior
   drafts described features that did not exist).
